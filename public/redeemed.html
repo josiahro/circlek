@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle K Digital Coupons</title>
+
+    <link rel="icon" href="./Assets/ck-favicon.png">
+    <title>Coupon Book - Circle K Digital Coupons</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            //
+          }
+        }
+      }
+    }
+    </script>
+
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body id="body">
+    <div class="grid"  style="background: linear-gradient(rgb(249, 56, 39), rgb(232, 193, 195)) 0% 0% / cover">
+        <!--<img src="./Assets/always-something-new-at-circlek.webp" style="height: 190px;" class="mx-auto mb-8" alt="">-->
+        <img src="./Assets/ec_RPP6-logo.webp" class="mx-auto mb-8 w-4/5" alt="">
+        <img id="product-image" class="w-3/6 mx-auto" src="" alt="">
+        <h1 class="text-6xl font-extrabold mx-auto pt-3" style="color: rgb(44, 44, 44);" id="free">FREE</h1>
+        <p id="item" class="mx-auto text-3xl font-bold w-4/5" style="text-align: center; font-family: Gotham Black; color: rgb(44, 44, 44);"></p>
+        <p id="redeemed-by" class="w-4/6 mx-auto text-center pt-3 font-light mt-3" style="color: rgb(44, 44, 44); font-size: 0.8rem;"></p>
+
+        <h1 id="timer" class="text-7xl mx-auto font-extrabold py-4" style="color: rgb(44, 44, 44);;">5:00</h1>
+
+        <div style="background-color: #fff">
+          <p class="text-white font-extrabold text-center p-4 text-xl" style="font-family: Gotham Black; color: rgb(220, 40, 29);">REDEEMED
+            <br>
+            <span id="redeemed-time"></span>
+          </p>
+        </div>
+        <img id="ROCKSTAR-ENERGY-DRINK-Code" class="mx-auto py-10" src="./Assets/product_codes/rockstar-energy-drink-Code.png" alt="" style="display: none; width: 60% !important;"></img>
+        <!--<img id="1-DLR-Off-Hostess-Snacks-Code" class="mx-auto py-10" src="./Assets/codes/1-DLR-Off-Hostess-Snacks-Code.png" alt="" style="display: none; width: 60% !important;"></img>-->
+        <img id="HOT-DOG-Code" class="mx-auto py-10" src="./Assets/product_codes/hot-dog-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <!--<img id="TAQUITO-Code" class="mx-auto py-10" src="./Assets/product_codes/taquitos-Code.png" alt="" style="display: none; width: 70% !important;"></img>-->
+        <img id="CIRCLE-K-PEANUTS-Code" class="mx-auto py-10" src="./Assets/product_codes/circle-k-peanuts.png" alt="" style="display: none; width: 70% !important;"></img>
+        <img id="ARIZONA-BEVERAGE-Code" class="mx-auto py-10" src="./Assets/product_codes/arizona-beverage-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <img id="MEDIUM-COFFEE-Code" class="mx-auto py-10" src="./Assets/product_codes/medium-coffee-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <img id="FROSTER-Code" class="mx-auto py-10" src="./Assets/product_codes/froster-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <!--<<img id="STARBUCKS-TRIPLESHOT-ENERGY-+-COFFEE-Code" class="mx-auto py-10" src="./Assets/product_codes/starbucks-tripleshot-energy-+-coffee-Code.png" alt="" style="display: none; width: 70% !important;"></img>-->
+        <img id="JOKER-ENERGY-DRINK-Code" class="mx-auto py-10" src="./Assets/product_codes/joker-energy-drink-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <!--<img id="GURU-ENERGY-DRINK-Code" class="mx-auto py-10" src="./Assets/product_codes/guru-energy-drink-Code.png" alt="" style="display: none; width: 70% !important;"></img>-->
+        <img id="SAVE-DLR-0.03-PER-L-ON-FUEL-Code" class="mx-auto py-10" src="./Assets/product_codes/SAVE-DLR-0.03-PER-L-ON-FUEL-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <img id="CIRCLE-K-CANDY-Code" class="mx-auto py-10" src="./Assets/product_codes/circle-k-candy-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <img id="POLAR-POP-Code" class="mx-auto py-10" src="./Assets/product_codes/polar-pop-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <!--<img id="TUTTI-FRUTTI-ICE-POP-Code" class="mx-auto py-10" src="./Assets/product_codes/tutti-frutti-ice-pop-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <img id="SAVE-DLR-0.10-PER-L-ON-FUEL-Code" class="mx-auto py-10" src="./Assets/product_codes/SAVE-DLR-0.10-PER-L-ON-FUEL-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <img id="COCA-COLA-BEVERAGE-Code" class="mx-auto py-10" src="./Assets/product_codes/coca-cola-beverage-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <img id="COCA-COLA-WITH-COFFEE-Code" class="mx-auto py-10" src="./Assets/product_codes/coca-cola-with-coffee-Code.png" alt="" style="display: none; width: 70% !important;"></img>-->
+        <img id="CIRCLE-K-WATER-Code" class="mx-auto py-10" src="./Assets/product_codes/circle-k-water-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <img id="CIRCLE-K-CHIPS-Code" class="mx-auto py-10" src="./Assets/product_codes/circle-k-chips-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <!--<img id="REESES-PEANUT-BUTTER-CUP-Code" class="mx-auto py-10" src="./Assets/product_codes/reeses-peanut-butter-cups-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <img id="SWEET-SIXTEEN-CANDIES-Code" class="mx-auto py-10" src="./Assets/product_codes/sweet-sixteen-candies-Code.png" alt="" style="display: none; width: 70% !important;"></img>-->
+        <img id="KINDER-SUPRISE-OR-BUENO-WHITE-Code" class="mx-auto py-10" src="./Assets/product_codes/kinder-suprise-or-bueno-white-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <img id="BIOSTEEL-DRINK-Code" class="mx-auto py-10" src="./Assets/product_codes/Biosteel-drink-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+        <img id="PEPSI-ZERO-Code" class="mx-auto py-10" src="./Assets/product_codes/pepsi-zero-Code.png" alt="" style="display: none; width: 70% !important;"></img>
+
+
+        <p class="px-4 pb-2 text-5xl font-bold m-auto" style="color: rgb(26, 26, 26); font-family: Gotham Black;">PLU# 5595</p>
+
+        <p class="px-4 text-center pb-10" style="font-size: 0.45rem;">Must be redeemed in front of cashier. Pushing the Redeem button will begin a 5-minute timer and reveal the coupon code for the cashier to use. Once the 5-minute timer is up, this coupon will expire and cannot be reused. In order to be valid, the countdown timer must be counting down with the current date and time. Valid only at participating Circle K and Mac's stores in Canada.</p>
+
+        <div style="background-color: rgb(99, 203, 180)" class="w-full grid grid-cols-2 items-center p-5">
+            <p class="text-white font-extrabold text-xs">Contact | Circle K Privacy Policy</p>
+            <img class="h-10 flex justify-self-end" src="./Assets/ck-logo-white-no-box.svg" alt="">
+        </div>
+    </div>
+
+    <script src="./JS/coupon.js"></script>
+</body>
+</html>

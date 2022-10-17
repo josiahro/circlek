@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/ck-favicon.png">
+    <title>Coupon Book - Circle K Digital Coupons</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    function viewCoupon(coupon) {
+      console.log(coupon);
+    }
+
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            //
+          }
+        }
+      }
+    }
+    </script>
+
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <div class="grid">
+    <div class="flex flex-row justify-center gap-4 pt-3">
+      <img src="./Assets/awallet-button.png" alt="" class="w-2/5">
+      <img src="./Assets/gwallet-button.png" alt="" class="w-2/5">
+    </div>
+    <img src="./Assets/coupons-circlek.svg" alt="" class="w-1/2 m-auto py-6">
+    <p class="m-auto pb-4 text-lg px-6 text-center" style="color:rgb(153, 153, 153); font-family: Gotham Light, sans-serif;">MAX 3 COUPON REDEMPTIONS PER DAY</p>
+    <!--<img src="./Assets/CKN-RPP6b-AR-eNewsletter-EN-405x270.webp" alt="" class="w-3/4 m-auto py-6">
+    <video id="video" src="./Assets/ckn-nph-homepage-p13_0315a.mp4" preload="auto" autoplay loop playsinline webkit-playsinline x5-playsinline style="width: 100%; height: 100%;"></video>-->
+    <div style="background-color: rgb(220, 41, 30); border-bottom: 1px solid white;" class="grid justify-center items-center py-6"><h1 class="text-white text-5xl text-extrabold" style="font-family: Gotham Black;">COUPONS</h1></div>
+    <div style="background-color: rgb(245, 245, 245);/*background: linear-gradient(rgb(249, 56, 39), rgb(232, 193, 195)) 0% 0% / cover;*/">
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/circle-k-water.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+            CIRCLE K WATER
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">500ml</p>
+          <button id="CIRCLE-K-WATER" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+        </div>
+        <h1 style="color: rgb(220, 41, 30);" class="font-black text-2xl text-center col-span-2 py-3">FOR USE IN ATLANTIC CANADA</h1>
+      </div>
+      <!--End Item-->
+    </div>
+    <div style="background-color: rgb(220, 41, 30); border-bottom: 1px solid white;" class="grid justify-center items-center py-6">
+      <h1 class="text-white text-5xl text-extrabold text-center" style="font-family: Gotham Black;">LIMITED</h1>
+      <h1 class="text-white text-5xl text-extrabold text-center" style="font-family: Gotham Black;">COUPONS</h1>
+    </div>
+
+    <div style="background-color: rgb(245, 245, 245);/*background: linear-gradient(rgb(249, 56, 39), rgb(232, 193, 195)) 0% 0% / cover;*/">
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/kinder-suprise-or-bueno-white.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+            KINDER ® SUPRISE OR KINDER ®<br>
+            BUENO WHITE
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">20-30g</p>
+          <button id="KINDER-SUPRISE-OR-BUENO-WHITE" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">20-39g Kinder® Surprise or Kinder® Bueno White. Beverage offers are subject to deposit and eco fees to be paid by the person redeeming the coupon. Valid only at participating Circle K and Couche-Tard Convenience Stores in Atlantic Canada (NB, NS, PE, NL), subject to product availability, while supplies last or while coupons last. Each coupon can be used once, only three coupons can be redeemed per customer per day, per mobile phone number. Coupon expires July 26, 2022. Activate coupon at checkout. Coupon must be presented at checkout with the 5-minute counter counting down with current date and time to redeem. Cannot be combined with any other offer or promotion. Offer not redeemable for cash and not transferable. Taxes not included.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/circle-k-water.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+            CIRCLE K WATER
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">500ml</p>
+          <button id="CIRCLE-K-WATER" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/circle-k-chips.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+            CIRCLE K CHIPS
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">66g • Any flavour</p>
+          <button id="CIRCLE-K-CHIPS" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/medium-coffee.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+            MEDIUM COFFEE
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">Medium • Valid for Coffee, Tea, Hot Chocolate, or Specialty Coffee</p>
+          <button id="MEDIUM-COFFEE" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/froster.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+            FROSTER
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">Medium • Any flavour</p>
+          <button id="FROSTER" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/joker-energy-drink.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+            JOKER ENERGY<br>
+            DRINK
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">473ml • Any flavour</p>
+          <button id="JOKER-ENERGY-DRINK" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/save-dlr-0.03-per-l-on-fuel.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);"></h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+            SAVE $0.03/L ON<br>
+            FUEL
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">Redeem in-store before refueling. Fuel prizes cannot be combined.</p>
+          <button id="SAVE-DLR-0.03-PER-L-ON-FUEL" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);;" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/hot-dog.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+            HOT DOG
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);"></p>
+          <button id="HOT-DOG" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="w-4/5 m-auto" src="./Assets/product_images/arizona-beverage.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+            ARIZONA<br>
+            BEVERAGE
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">680ml</p>
+          <button id="ARIZONA-BEVERAGE" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/polar-pop.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+            POLAR POP
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">Medium</p>
+          <button id="POLAR-POP" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/circle-k-candy.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+            CIRCLE K CANDY
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">113-198g • Any variety</p>
+          <button id="CIRCLE-K-CANDY" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/rockstar-energy-drink.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+            ROCKSTAR ENERGY<br>
+            DRINK
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">473ml • Any variety</p>
+          <button id="ROCKSTAR-ENERGY-DRINK" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/circle-k-peanuts.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+              CIRCLE K NUTS
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">46g</p>
+          <button id="CIRCLE-K-PEANUTS" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/biosteel-drink.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+              BIOSTEEL DRINK
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">500ml • Any flavour</p>
+          <button id="BIOSTEEL-DRINK" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+      <!--Item-->
+      <div class="grid grid-cols-2 items-center py-2">
+        <img class="h-52 m-auto" src="./Assets/product_images/pepsi-zero.png" alt="">
+        <div class="grid">
+          <h1 class="text-5xl font-black h-10" style="color:rgb(44, 44, 44);">FREE</h1>
+          <p class="font-black text-xl pt-2" style="color:rgb(44, 44, 44); line-height: 115%;">
+              PEPSI ZERO
+          </p>
+          <p class="font-extralight pb-2" style="color:rgb(44, 44, 44);">591ml</p>
+          <button id="PEPSI-ZERO" class="rounded-xl grid items-center justify-center mb-2 font-extralight text-xl coupon-view" style="border: 1px solid rgb(44, 44, 44); height: 45px; width: 200px; color: rgb(44, 44, 44);">
+            VIEW
+          </button>
+          <p style="color: rgb(44, 44, 44);" class="redeemed-by text-xs pb-2"></p>
+          <p class="pb-5 pr-7" style="font-size: 0.425rem; color: rgb(44, 44, 44);">Each coupon can be used once, only three coupons can be redeemed per customer per day. No cash value. Cannot be combined with any other offer.</p>
+        </div>
+      </div>
+      <!--End Item-->
+    </div>
+
+    <div style="background-color: rgb(237, 140, 88);" class="w-full grid grid-cols-2 items-center p-5">
+      <p class="text-white font-bold text-xs">Contacts | Circle K Privacy Policy</p>
+      <img class="h-10 flex justify-self-end" src="./Assets/ck-logo-white-no-box.svg" alt="">
+    </div>
+  </div>
+
+  <script src="./JS/main.js"></script>
+</body>
+</html>
