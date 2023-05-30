@@ -6,7 +6,7 @@ if(reedemed_by) {
     for (let index = 0; index < reedemed_by.length; index++) {
         const element = reedemed_by[index];
         
-        element.innerHTML = `Must be redeemed by <span style="color: rgb(44, 44, 44)" class="font-black text-xs">${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}</span> at Midnight Eastern time`;
+        element.innerHTML = `Must be redeemed by <span style="color: #fff;" class="font-black text-xs">${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}</span> at Midnight Eastern time`;
     }
 }
 
