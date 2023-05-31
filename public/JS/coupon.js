@@ -55,8 +55,10 @@ function tConvert (time) {
 const redeemed_time = document.getElementById("redeemed-time");
 if(redeemed_time) {
     const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    let date = new Date();
-    redeemed_time.innerText = `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()} ${tConvert(date.toTimeString().slice(0, 8))}`
+    setInterval(() => {
+      let date = new Date();
+      redeemed_time.innerText = `${monthNames[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()} ${tConvert(date.toTimeString().slice(0, 8))}`
+    }, 1); 
 }
 
 document.getElementById('timer').innerHTML =
