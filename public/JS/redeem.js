@@ -1,8 +1,10 @@
 const item_image = document.getElementById("product-image");
 if(item_image) {
     let product = location.search.split("?")[1];
-    item_image.src = `https://healthy-southern-fighter.glitch.me/Assets/product_images/${product.toLowerCase()}.png`;
+    item_image.src = `./Assets/product_images/${product.toLowerCase()}.png`;
     document.getElementById("item").innerText = `${product.replaceAll("-", " ")}`;
+
+    console.log(product)
 }
 
 const free = document.getElementById("free");
