@@ -15,8 +15,8 @@ app.get("/redeemed", (req, res) => {
     res.sendFile(__dirname + "/public/redeemed.html")
 });
 
-app.get("/arizona", (req, res) => {
-    res.sendFile(__dirname + "/public/arizona.html")
+app.get("/coffee", (req, res) => {
+    res.sendFile(__dirname + "/public/coffee.html")
 });
 
 
