@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Gotham Black";
+    src: url("../GothamBlackRegular/Gotham\ Black\ Regular.ttf");
+}
+
+@font-face {
+    font-family: "Gotham Light";
+    src: url("../GothamLightRegular/FontsFree-Net-Gotham-Light.ttf");
+}
+
+.coupon-view:hover {
+    background-color: #fff;
+    border: none !important;
+    color: rgb(44, 44, 44) !important;
+}
+
+.coupon-view {
+    border: 1px solid rgb(153, 153, 153) !important;
+    background-color: rgb(220, 41, 30);
+    color: #fff !important;
+}
+
+.redeem-btn:hover {
+    background-color: white !important;
+    color: rgb(220, 41, 30) !important;
+    border: 1px solid rgb(220, 41, 30) !important;
+}
+
+#cancel {
+    border: 1px solid rgb(220, 41, 30) !important;
+    color: rgb(220, 41, 30) !important;
+    background-color: white !important;
+}
+
+#cancel:hover {
+    background-color: rgb(220, 41, 30) !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
