@@ -95,6 +95,14 @@ export default defineComponent({
           id: "medium-polar-pop",
           location: "FOR USE IN ONTARIO",
         },
+        {
+            imageSrc: "/product_images/powerade.png",
+            title: "FREE",
+            subTitle: "Powerade",
+            description: "710ml. Any variety.",
+            id: "powerade",
+            location: "FOR USE IN ONTARIO",
+        }
       ],
     };
   },

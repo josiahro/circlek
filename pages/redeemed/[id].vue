@@ -242,6 +242,15 @@ export default defineComponent({
           location: "FOR USE IN ONTARIO",
           plu: "6394",
         },
+        {
+            imageSrc: "/product_images/powerade.png",
+            title: "FREE",
+            subTitle: "Powerade",
+            description: "710ml. Any variety.",
+            id: "powerade",
+            location: "FOR USE IN ONTARIO",
+            plu: "6419",
+        }
       ],
     };
   },

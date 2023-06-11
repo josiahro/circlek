@@ -64,6 +64,8 @@
     <div class="grid grid-cols-2 justify-end mx-4">
       <button
         id="itemid"
+        v-if="canRedeem(id)"
+        @click="redeemItem(id)"
         class="rounded-xl grid items-center justify-center mb-2 font-light text-xl coupon-view mx-auto mt-5 w-5/6"
         style="
           border: 1px solid rgb(153, 153, 153);
@@ -73,6 +75,20 @@
       >
         REDEEM
       </button>
+
+      <button
+      
+        v-else
+        class="rounded-xl grid items-center justify-center mb-2 font-light text-xl coupon-view mx-auto mt-5 w-5/6"
+        style="
+          border: 1px solid rgb(153, 153, 153);
+          height: 45px;
+          color: rgb(153, 020, 153);
+        "
+      >
+        REDEEMED
+      </button>
+
       <button
         id="itemid"
         class="rounded-xl grid items-center justify-center mb-2 font-light text-xl coupon-view mx-auto mt-5 w-5/6"
@@ -125,14 +141,49 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { useRouter } from "vue-router";
+import { useProductStore } from "~/store/productStore.js";
+import dayjs from "dayjs";
+
 const router = useRouter();
 
 export default defineComponent({
-    setup() {
-        return {
-            $router: router,
-        }
-    },
+  setup() {
+    const store = useProductStore();
+
+    const redeemedProducts = ref<{ [key: string]: string[] }>({});
+
+    const canRedeem = (id: string): boolean => {
+      const redemptionLimitPerProduct = 1;
+      const redemptionLimitPerDay = 3;
+
+      const redeemedPerProduct = redeemedProducts.value[id] || [];
+      const redeemedToday = redeemedPerProduct.filter((date) =>
+        dayjs(date).isSame(dayjs(), "day")
+      );
+
+      return (
+        redeemedPerProduct.length < redemptionLimitPerProduct &&
+        redeemedToday.length < redemptionLimitPerDay && 
+        store.getTotalRedemptionsToday() < redemptionLimitPerDay
+      );
+    };
+
+    const redeemItem = (id: string): void => {
+      const currentTime = dayjs().format();
+      store.redeemProduct(id, currentTime);
+    };
+
+    onMounted(() => {
+      // Load redemption history from store
+      redeemedProducts.value = store.redeemedProducts;
+    });
+
+    return {
+      $router: router,
+      canRedeem,
+      redeemItem,
+    };
+  },
   data() {
     return {
       showModal: false,
@@ -178,6 +229,14 @@ export default defineComponent({
           id: "medium-polar-pop",
           location: "FOR USE IN ONTARIO",
         },
+        {
+            imageSrc: "/product_images/powerade.png",
+            title: "FREE",
+            subTitle: "Powerade",
+            description: "710ml. Any variety.",
+            id: "powerade",
+            location: "FOR USE IN ONTARIO",
+        }
       ],
     };
   },
