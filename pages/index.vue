@@ -50,61 +50,28 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import axios from "axios";
+import { productList } from "~/typings/index";
 
 export default defineComponent({
   data() {
     return {
-      items: [
-        {
-          imageSrc: "/product_images/arizona.png",
-          title: "FREE",
-          subTitle: "Arizona",
-          description: "680 ml. Any variety.",
-          id: "arizona",
-          location: "FOR USE IN ONTARIO",
-        },
-        {
-          imageSrc: "/product_images/guru-energy-drink.png",
-          title: "FREE",
-          subTitle: "Guru Energy Drink",
-          description: "355 ml. Any variety.",
-          id: "guru-energy-drink",
-          location: "FOR USE IN ONTARIO",
-        },
-        {
-          imageSrc: "/product_images/small-hot-beverage.png",
-          title: "FREE",
-          subTitle: "Small Hot Beverage",
-          description: "Any variety!",
-          id: "small-hot-beverage",
-          location: "FOR USE IN ONTARIO",
-        },
-        {
-          imageSrc: "/product_images/small-froster.png",
-          title: "FREE",
-          subTitle: "Small Froster",
-          description: "Any variety!",
-          id: "small-froster",
-          location: "FOR USE IN ONTARIO",
-        },
-        {
-          imageSrc: "/product_images/medium-polar-pop.png",
-          title: "FREE",
-          subTitle: "Medium Polar Pop",
-          description: "Any variety!",
-          id: "medium-polar-pop",
-          location: "FOR USE IN ONTARIO",
-        },
-        {
-            imageSrc: "/product_images/powerade.png",
-            title: "FREE",
-            subTitle: "Powerade",
-            description: "710ml. Any variety.",
-            id: "powerade",
-            location: "FOR USE IN ONTARIO",
-        }
-      ],
+      items: productList,
     };
+  },
+  created() {
+  
+    axios.get("https://api.ipify.org?format=json")
+      .then((response) => {
+        const ipAddress = response.data.ip || "No IP address found.";
+        console.log(`IP Address: ${ipAddress}`);
+
+
+      })
+      .catch((error) => {
+        console.error("Failed to obtain IP address", error);
+      });
   },
 });
 </script>
+
