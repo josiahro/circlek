@@ -52,6 +52,15 @@ export const productList: Product[] = [
           id: "powerade",
           location: "FOR USE IN ONTARIO",
           plu: "6419",
+      },
+      {
+        imageSrc: "/product_images/circle-k-candy.png",
+        title: "FREE",
+        subTitle: "Circle K Candy",
+        description: "140-198g. Any variety",
+        id: "circle-k-candy",
+        location: "FOR USE IN ONTARIO",
+        plu: "6384",
       }
     // Add more product/item objects as needed
   ];

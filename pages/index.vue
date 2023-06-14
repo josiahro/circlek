@@ -59,19 +59,9 @@ export default defineComponent({
       items: productList,
     };
   },
-  created() {
   
-    axios.get("https://api.ipify.org?format=json")
-      .then((response) => {
-        const ipAddress = response.data.ip || "No IP address found.";
-        console.log(`IP Address: ${ipAddress}`);
 
-
-      })
-      .catch((error) => {
-        console.error("Failed to obtain IP address", error);
-      });
-  },
 });
 </script>
+
 
